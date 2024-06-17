@@ -16,3 +16,9 @@ CREATE TABLE votacao_presidente (
     qt_votos_nom_validos INTEGER,
     ano INTEGER
 );
+
+CREATE TABLE acessos_ano (
+    ano INTEGER,
+    sigla_uf VARCHAR(2),
+    acessos INTEGER
+	)
