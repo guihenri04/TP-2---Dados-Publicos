@@ -15,10 +15,12 @@ CREATE TABLE votacao_presidente (
     sq_eleicao_divulga INTEGER,
     qt_votos_nom_validos INTEGER,
     ano INTEGER
+    PRIMARY KEY (sq_candidato)
 );
 
-CREATE TABLE acessos_ano (
+CREATE TABLE acessos_internet (
     ano INTEGER,
-    sigla_uf VARCHAR(2),
+    sg_uf VARCHAR(2),
     acessos INTEGER
-	)
+    PRIMARY KEY (ano, sg_uf)
+);
